@@ -1,0 +1,10 @@
+<component name="com.warnerbros.cors.confix.training">
+<extension target="org.nuxeo.ecm.platform.web.common.requestcontroller.service.RequestControllerService" point="corsConfig">
+    <corsConfig name="myCorsConfig" allowGenericHttpRequests="true"
+      allowOrigin="https://nuxeo.github.io"      
+      supportedMethods="GET,POST,HEAD,OPTIONS,DELETE,PUT">
+      <pattern>/nuxeo/.*</pattern>
+    </corsConfig>
+</extension>
+
+</component>
