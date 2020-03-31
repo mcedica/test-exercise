@@ -16,6 +16,7 @@
 
   <modules>
     <module>training-core</module>
+    <module>training-web</module>
   </modules>
   <scm/>
   <licenses/>
@@ -78,6 +79,11 @@
       <dependency>
         <groupId>test.training</groupId>
         <artifactId>training-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>test.training</groupId>
+        <artifactId>training-web</artifactId>
         <version>${project.version}</version>
       </dependency>
     </dependencies>

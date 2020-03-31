@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-Vendor: com.warnerbros
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Bundle-Version: 1.0.0
+Bundle-Name: training-web
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: test.training.training-web;singleton=true
+Nuxeo-Component: OSGI-INF/ui-extensions.xml

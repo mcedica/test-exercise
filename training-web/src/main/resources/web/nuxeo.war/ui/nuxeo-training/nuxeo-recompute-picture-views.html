@@ -1,0 +1,33 @@
+<dom-module id="nuxeo-recompute-picture-views">
+  <template>
+OLLLL
+  <nuxeo-operation id="recomputeViews" op="Picture.RecomputeViews">
+  </nuxeo-operation>
+  <paper-button id="triggerPictureViews" autofocus on-tap="_recomputeViews">Trigger Recompute picture views</paper-button>
+
+  </template>
+
+  <script>
+    /**
+     * @polymer
+     * @extends HTMLElement
+     */
+    class NuxeoRecomputePictureViews extends Nuxeo.Element {
+
+      static get is() {
+        return 'nuxeo-recompute-picture-views';
+      }
+      
+      _recomputeViews(){
+         this.$.recomputeViews.params = {'query': 'Select * from Picture'};
+         this.$.recomputeViews.execute().then((res) => {
+            console.log('Action triggered');
+          }).catch((err) => {
+            
+          })
+      }
+    }
+
+    window.customElements.define(NuxeoRecomputePictureViews.is, NuxeoRecomputePictureViews);
+  </script>
+</dom-module>

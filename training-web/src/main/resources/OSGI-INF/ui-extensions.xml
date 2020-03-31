@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<component name="com.warnerbros.training.web.resources.contrib">
+
+  <require>org.nuxeo.web.ui.resources</require>
+
+  <extension target="org.nuxeo.ecm.platform.WebResources" point="resources">
+    <resource name="nuxeo-training.html" type="import">
+      <uri>/ui/nuxeo-training/nuxeo-training.html</uri>
+    </resource>
+  </extension>
+  <extension target="org.nuxeo.ecm.platform.WebResources" point="bundles">
+    <bundle name="web-ui">
+      <resources append="true">
+        <resource>nuxeo-training.html</resource>
+      </resources>
+    </bundle>
+  </extension>
+
+</component>

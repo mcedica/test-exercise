@@ -1,0 +1,18 @@
+<link rel="import" href="./nuxeo-recompute-picture-views.html">
+<nuxeo-slot-content name="adminRecomputePictureViewsMenuItem" slot="ADMINISTRATION_MENU" order="100">
+  <template>
+    <nuxeo-filter user="[[user]]" expression="user.isAdministrator">
+      <template>
+        <nuxeo-menu-item name="recompute" label="PictureViews" route="administration:recompute">
+        </nuxeo-menu-item>
+      </template>
+      </nuxeo-filter>
+</template>
+</nuxeo-slot-content>
+
+
+<nuxeo-slot-content name="adminRecomputePictureViewsPage" slot="ADMINISTRATION_PAGES" order="70">
+   <template>
+       <nuxeo-recompute-picture-views name="recompute"></nuxeo-recompute-picture-views>
+   </template>
+</nuxeo-slot-content>
