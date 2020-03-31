@@ -6,3 +6,4 @@ Bundle-Version: 1.0.0
 Bundle-Name: training-core
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: test.training.training-core;singleton=true
+Nuxeo-Component: OSGI-INF/permissions-contrib.xml

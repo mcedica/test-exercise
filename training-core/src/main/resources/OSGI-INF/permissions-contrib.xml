@@ -1,0 +1,21 @@
+<component name="com.warnerbros.permissions.training.contrib">
+<require>org.nuxeo.ecm.core.security.defaultPermissions</require>
+
+<extension point="permissions" target="org.nuxeo.ecm.core.security.SecurityService">
+  <permission name="ReadWriteWithoutRemove">
+    <include>Read</include>
+    <include>AddChildren</include>
+    <include>WriteProperties</include>
+    <include>ManageWorkflows</include>
+    <include>WriteLifeCycle</include>
+    <include>WriteVersion</include>
+  </permission>
+</extension>
+
+<extension point="permissionsVisibility" target="org.nuxeo.ecm.core.security.SecurityService">
+  <visibility>
+    <item order="40" show="true">ReadWriteWithoutRemove</item>
+  </visibility>
+</extension>
+
+</component>
