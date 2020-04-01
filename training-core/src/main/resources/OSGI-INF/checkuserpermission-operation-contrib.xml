@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.training.automation.operation.checkuserpermission" version="1.0">
+
+  <extension point="operations" target="org.nuxeo.ecm.core.operation.OperationServiceComponent">
+    <operation class="org.nuxeo.training.automation.CheckUserPermission"/>
+  </extension>
+
+</component>
