@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.training.listener.listener.filecreatedlistener">
+
+  <extension target="org.nuxeo.ecm.core.event.EventServiceComponent" point="listener">
+    <listener name="filecreatedlistener"
+      class="org.nuxeo.training.listener.FileCreatedListener">
+        <event>documentCreated</event>
+    </listener>
+  </extension>
+
+</component>
