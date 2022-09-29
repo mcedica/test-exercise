@@ -2,7 +2,7 @@
 
 <component name="com.warnerbros.training.web.resources.contrib">
 
-  <require>org.nuxeo.web.ui.resources</require>
+  <require>org.nuxeo.runtime.started</require>
 
   <extension target="org.nuxeo.ecm.platform.WebResources" point="resources">
     <resource name="nuxeo-training.html" type="import">
